@@ -131,9 +131,9 @@ Perintah ini digunakan untuk mengisi database dengan data awal (dummy data / sam
 - Demo project
 
 ```
-php artisan make:controller PostController --resource --model=Post
+php artisan make:controller NamaController --resource --model=Post
 ```
-Perintah ini membuat sebuah Controller bernama PostController yang otomatis memiliki 7 method dasar CRUD:
+Perintah ini membuat sebuah Controller bernama NamaController yang otomatis memiliki 7 method dasar CRUD:
 - index()	Menampilkan semua data Post
 - create()	Menampilkan form tambah data
 - store()	Menyimpan data baru ke database
@@ -142,7 +142,8 @@ Perintah ini membuat sebuah Controller bernama PostController yang otomatis memi
 - update()	Update data Post
 - destroy()	Hapus Post
 
-Dan Controller langsung terhubung dengan Model Post
+Dan Controller langsung terhubung dengan Model
+
 
 
 
