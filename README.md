@@ -9,7 +9,7 @@ MVC (Model–View–Controller) adalah pola arsitektur yang digunakan Laravel un
 
 
 ## Struktur MVC Laravel
-``
+```
 app/
  ├── Models/
  
@@ -32,7 +32,7 @@ resources/
 routes/
 
  └── web.php                           <-- Route
-``
+```
 
 
 ## Model (Bagian Data)
@@ -153,3 +153,4 @@ Perintah ini membuat sebuah Controller bernama PostController yang otomatis memi
 - destroy()	Hapus Post
 
 Dan Controller langsung terhubung dengan Model Post
+
