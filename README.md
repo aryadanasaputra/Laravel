@@ -141,6 +141,8 @@ Perintah ini membuat sebuah Controller bernama PostController yang otomatis memi
 - edit()	Menampilkan form edit Post
 - update()	Update data Post
 - destroy()	Hapus Post
+
 Dan Controller langsung terhubung dengan Model Post
+
 
 
