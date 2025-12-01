@@ -134,16 +134,20 @@ Perintah ini digunakan untuk mengisi database dengan data awal (dummy data / sam
 php artisan make:controller NamaController --resource --model=Post
 ```
 Perintah ini membuat sebuah Controller bernama NamaController yang otomatis memiliki 7 method dasar CRUD:
-- index()	Menampilkan semua data Post
+- index()	Menampilkan semua data
 - create()	Menampilkan form tambah data
 - store()	Menyimpan data baru ke database
-- show()	Menampilkan detail 1 Post
-- edit()	Menampilkan form edit Post
-- update()	Update data Post
-- destroy()	Hapus Post
+- show()	Menampilkan detail data
+- edit()	Menampilkan form edit
+- update()	Update data
+- destroy()	Hapus data
 
 Dan Controller langsung terhubung dengan Model
 
+```
+php artisan vendor:publish
+```
+Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
 
 
 
