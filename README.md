@@ -12,17 +12,26 @@ MVC (Model–View–Controller) adalah pola arsitektur yang digunakan Laravel un
 ``
 app/
  ├── Models/
+ 
  │    └── Product.php                  <-- Model
+ 
  ├── Http/
+ 
  │    └── Controllers/
+ 
  │         └── ProductController.php   <-- Controller
+ 
 resources/
- └── views/
-      └── products/
-            └── index.blade.php        <-- View
-routes/
- └── web.php                           <-- Route
 
+ └── views/
+ 
+      └── products/
+      
+            └── index.blade.php        <-- View
+            
+routes/
+
+ └── web.php                           <-- Route
 ``
 
 
@@ -142,4 +151,5 @@ Perintah ini membuat sebuah Controller bernama PostController yang otomatis memi
 - edit()	Menampilkan form edit Post
 - update()	Update data Post
 - destroy()	Hapus Post
+
 Dan Controller langsung terhubung dengan Model Post
