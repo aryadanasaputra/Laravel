@@ -58,6 +58,7 @@ Route::get('/products', [ProductController::class, 'index']);
 
 
 ## Penjelasan Terminal
+### Installasi
 ```
 composer create-project laravel/Laravel Nama-Proyek
 ```
@@ -91,16 +92,32 @@ Artinya, setelah menjalankan perintah ini, proyek akan otomatis memiliki:
 - View/komponen frontend
 - Struktur folder siap pakai
 
+### Membuat File
 ```
 php artisan make:model NamaModel -m
 ```
 Perintah ini digunakan untuk membuat sebuah Model baru di Laravel dan sekaligus membuat Migration untuk tabel database yang terkait dengan model tersebut.
 
 ```
-php artisan db:show
+php artisan make:controller NamaController --resource --model=Post
 ```
-Perintah ini digunakan untuk menampilkan informasi database yang sedang dikonfigurasi di Laravel.
+Perintah ini membuat sebuah Controller bernama NamaController yang otomatis memiliki 7 method dasar CRUD:
+- index()	Menampilkan semua data
+- create()	Menampilkan form tambah data
+- store()	Menyimpan data baru ke database
+- show()	Menampilkan detail data
+- edit()	Menampilkan form edit
+- update()	Update data
+- destroy()	Hapus data
 
+Dan Controller langsung terhubung dengan Model.
+
+```
+php artisan make:component NamaComponent
+```
+Perintah ini digunakan untuk membuat Laravel Blade Component baru. Blade Component adalah komponen UI yang bisa digunakan berulang-ulang di dalam view Laravel.
+
+### Migrate
 ```
 php artisan migrate
 ```
@@ -121,6 +138,12 @@ php artisan migrate:fresh --seed
 ```
 Perintah ini digunakan untuk menghapus semua tabel di database, lalu menjalankan seluruh migration dari awal, kemudian mengisi kembali database dengan data awal (dummy data).
 
+### Database
+```
+php artisan db:show
+```
+Perintah ini digunakan untuk menampilkan informasi database yang sedang dikonfigurasi di Laravel.
+
 ```
 php artisan db:seed 
 ```
@@ -130,29 +153,15 @@ Perintah ini digunakan untuk mengisi database dengan data awal (dummy data / sam
 - Development
 - Demo project
 
-```
-php artisan make:controller NamaController --resource --model=Post
-```
-Perintah ini membuat sebuah Controller bernama NamaController yang otomatis memiliki 7 method dasar CRUD:
-- index()	Menampilkan semua data
-- create()	Menampilkan form tambah data
-- store()	Menyimpan data baru ke database
-- show()	Menampilkan detail data
-- edit()	Menampilkan form edit
-- update()	Update data
-- destroy()	Hapus data
 
-Dan Controller langsung terhubung dengan Model
-
+### Vendor
 ```
 php artisan vendor:publish
 ```
 Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
 
-```
-php artisan make:component NamaComponent
-```
-Perintah ini digunakan untuk membuat Laravel Blade Component baru. Blade Component adalah komponen UI yang bisa digunakan berulang-ulang di dalam view Laravel.
+
+
 
 
 
