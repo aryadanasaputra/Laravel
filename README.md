@@ -149,5 +149,12 @@ php artisan vendor:publish
 ```
 Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
 
+```
+php artisan make:component NamaComponent
+```
+Perintah ini digunakan untuk membuat Laravel Blade Component baru. Blade Component adalah komponen UI yang bisa digunakan berulang-ulang di dalam view Laravel.
+
+
+
 
 
