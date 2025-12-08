@@ -117,6 +117,11 @@ php artisan make:component NamaComponent
 ```
 Perintah ini digunakan untuk membuat Laravel Blade Component baru. Blade Component adalah komponen UI yang bisa digunakan berulang-ulang di dalam view Laravel.
 
+```
+php artisan make:request NamaFileRequest
+```
+Perintah ini digunakan untuk membuat Form Request, Form Request adalah class khusus yang digunakan untuk validsi request dan otorisasi request.
+
 ### Migrate
 ```
 php artisan migrate
@@ -159,6 +164,7 @@ Perintah ini digunakan untuk mengisi database dengan data awal (dummy data / sam
 php artisan vendor:publish
 ```
 Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
+
 
 
 
