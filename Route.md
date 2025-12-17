@@ -35,4 +35,19 @@ function () {
     return view('about');
 }
 ```
-Ini disebut closure
+Ini disebut closure, yang berisi aksi yang akan dijalankan saat route diakses.
+
+Closure adalah function tanpa nama
+- Bisa disimpan di variabel
+- Bisa dikirim sebagai parameter
+- Bisa akses variabel luar dengan "use"
+- Banyak dipakai di Laravel (Route, Collection, Callback)
+
+#### 4. return view('about')
+```
+return view('about')
+```
+Akan mengembalikan fungsi view yang mana akan menampilkan file view, Laravel secara otomatis akan mencari file about.blade.php yang berada di resources
+```
+resources/views/about.blade.php
+```
