@@ -92,6 +92,12 @@ Artinya, setelah menjalankan perintah ini, proyek akan otomatis memiliki:
 - View/komponen frontend
 - Struktur folder siap pakai
 
+### List
+```
+php artisan list
+```
+Perintah ini digunakan untuk menampilkan seluruh perintah Artisan yang tersedia di proyek Laravel.
+
 ### Membuat File
 ```
 php artisan make:model NamaModel -m
@@ -164,6 +170,7 @@ Perintah ini digunakan untuk mengisi database dengan data awal (dummy data / sam
 php artisan vendor:publish
 ```
 Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
+
 
 
 
