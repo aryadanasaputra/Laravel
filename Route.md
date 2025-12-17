@@ -7,4 +7,15 @@ Route::get('/about', function () {
     return view('about');
 });
 ```
-#### Penjelasn
+### Penjelasan
+#### 1. Route::get
+```
+Route::get
+```
+get adalah salah satu dari HTTP method yang berfungsi untuk mengambil data/halaman.
+
+HTTP method lain : 
+- get → mengambil data / halaman
+- post → mengirim data (form)
+- put / patch → update data
+- delete → hapus data
