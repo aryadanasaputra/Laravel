@@ -19,3 +19,20 @@ HTTP method lain :
 - post → mengirim data (form)
 - put / patch → update data
 - delete → hapus data
+
+#### 2. '/about'
+```
+'/about'
+```
+Merupakan URL path, jika route di terapkan maka route ini akan dijalankan.
+```
+http://localhost:8000/about
+```
+
+#### 3. function () { ... }
+```
+function () {
+    return view('about');
+}
+```
+Ini disebut closure
