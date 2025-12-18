@@ -172,6 +172,16 @@ php artisan vendor:publish
 Perintah ini digunakan untuk menyalin (publish) file konfigurasi, view, asset, atau resource lain dari vendor package ke folder aplikasi (config, resources, public, dll).
 
 
+### Config
+```
+php artisan config:publish
+```
+Perintah ini digunakan untuk mempublish (menyalin) file konfigurasi bawaan Laravel Framework ke folder config. dimana secara default, Laravel 11 tidak menyertakan semua file config secara fisik di folder config. Biasanya digunakan jika ingin:
+- Mengubah default timezone
+- Mengatur cache driver
+- Mengatur session
+- Mengatur filesystem
+- Melihat config Laravel secara detail
 
 
 
